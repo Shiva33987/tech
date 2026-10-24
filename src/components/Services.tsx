@@ -555,108 +555,173 @@ export default function Services({ onViewFullPage }: { onViewFullPage?: () => vo
       </div>
 
       {/* ============================================================ */}
-      {/* INTERACTIVE DETAIL MODAL / DRAWER                            */}
+      {/* LUXURY INTERACTIVE DETAIL MODAL / ARCHITECTURAL DOSSIER       */}
       {/* ============================================================ */}
       <AnimatePresence>
         {detailModalItem && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/80 backdrop-blur-2xl overflow-y-auto">
+            {/* Ambient Backdrop Click-away */}
+            <div
+              className="fixed inset-0 cursor-pointer -z-10"
+              onClick={() => setDetailModalItem(null)}
+              aria-hidden="true"
+            />
+
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 15 }}
+              initial={{ opacity: 0, scale: 0.92, y: 25 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 15 }}
-              transition={{ duration: 0.25, ease: "easeOut" }}
-              className="relative w-full max-w-2xl bg-[#0d1017] border border-white/20 rounded-3xl p-6 sm:p-8 shadow-2xl overflow-hidden"
+              exit={{ opacity: 0, scale: 0.94, y: 15 }}
+              transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              className="relative w-full max-w-2xl rounded-[32px] p-6 sm:p-9 shadow-[0_30px_90px_rgba(0,0,0,0.85)] border border-white/[0.15] overflow-hidden my-auto max-h-[92vh] overflow-y-auto no-scrollbar"
               style={{
-                boxShadow: `0 25px 70px -15px ${detailModalItem.theme.glowHex}`,
+                background: "linear-gradient(145deg, rgba(22, 27, 39, 0.96) 0%, rgba(11, 14, 23, 0.98) 50%, rgba(6, 8, 14, 1) 100%)",
+                boxShadow: `0 30px 100px -20px ${detailModalItem.theme.glowHex}, 0 0 0 1px rgba(255,255,255,0.1) inset`,
               }}
               role="dialog"
               aria-modal="true"
               aria-labelledby="modal-title"
             >
-              {/* Atmospheric Header Tint */}
+              {/* Dynamic Luminous Gradient Aura in Background */}
               <div
-                className="absolute top-0 left-0 right-0 h-1.5"
-                style={{ backgroundColor: detailModalItem.theme.baseHex }}
+                className="absolute -top-32 -right-32 w-80 h-80 rounded-full blur-[110px] pointer-events-none opacity-40 transition-all duration-700"
+                style={{
+                  background: `radial-gradient(circle, ${detailModalItem.theme.accentText} 0%, ${detailModalItem.theme.baseHex} 60%, transparent 100%)`,
+                }}
+              />
+              <div
+                className="absolute -bottom-32 -left-32 w-72 h-72 rounded-full blur-[100px] pointer-events-none opacity-25"
+                style={{
+                  background: "radial-gradient(circle, rgba(250, 100, 0, 0.8) 0%, rgba(230, 0, 56, 0.5) 70%, transparent 100%)",
+                }}
               />
 
-              {/* Close Button */}
+              {/* Top Accent Gradient Bar */}
+              <div
+                className="absolute top-0 left-0 right-0 h-[3px]"
+                style={{
+                  background: `linear-gradient(90deg, transparent 0%, ${detailModalItem.theme.accentText} 30%, #FA6400 70%, transparent 100%)`,
+                }}
+              />
+
+              {/* Close Button with Glassmorphism */}
               <button
                 type="button"
                 onClick={() => setDetailModalItem(null)}
-                className="absolute top-5 right-5 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 flex items-center justify-center text-white/70 hover:text-white transition-all cursor-pointer"
+                className="absolute top-5 right-5 sm:top-6 sm:right-6 w-10 h-10 rounded-full bg-white/[0.08] hover:bg-white/[0.18] border border-white/15 backdrop-blur-xl flex items-center justify-center text-white/80 hover:text-white transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer shadow-lg z-20 group"
                 aria-label="Close dialog"
               >
-                <X className="w-4 h-4" />
+                <X className="w-4 h-4 transition-transform group-hover:rotate-90 duration-300" />
               </button>
 
-              {/* Modal Header */}
-              <div className="flex items-center gap-3 mb-3">
-                <span className="font-mono text-xs uppercase tracking-widest px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-white/70">
+              {/* Top Pill Badges Row */}
+              <div className="flex flex-wrap items-center gap-2.5 mb-4 relative z-10">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-wider uppercase text-white bg-gradient-to-r from-white/[0.12] to-white/[0.06] border border-white/20 shadow-sm backdrop-blur-md">
+                  <span
+                    className="w-1.5 h-1.5 rounded-full animate-pulse"
+                    style={{ backgroundColor: detailModalItem.theme.accentText }}
+                  />
                   DISCIPLINE {detailModalItem.number}
                 </span>
-                <span className="font-mono text-xs uppercase tracking-widest text-white/50">
+
+                <span
+                  className="px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-wider uppercase backdrop-blur-md border shadow-sm"
+                  style={{
+                    color: detailModalItem.theme.accentText,
+                    backgroundColor: "rgba(255, 255, 255, 0.04)",
+                    borderColor: detailModalItem.theme.borderHex,
+                  }}
+                >
                   {detailModalItem.badge}
+                </span>
+
+                <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                  Enterprise Tier SLA
                 </span>
               </div>
 
-              <h3
-                id="modal-title"
-                className="font-display text-2xl sm:text-3xl font-bold text-white mb-2"
-              >
-                {detailModalItem.title}
-              </h3>
-              <p className="text-sm sm:text-base text-white/80 font-medium mb-6">
+              {/* Title with Gradient Text / High Contrast */}
+              <div className="relative z-10 mb-2">
+                <h3
+                  id="modal-title"
+                  className="font-['Space_Grotesk'] text-2xl sm:text-3xl lg:text-[34px] font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-slate-300 tracking-tight leading-tight"
+                >
+                  {detailModalItem.title}
+                </h3>
+              </div>
+
+              {/* Subtitle / Value Proposition */}
+              <p className="text-sm sm:text-base text-slate-300/90 font-normal leading-relaxed mb-6 relative z-10">
                 {detailModalItem.subtitle}
               </p>
 
-              {/* Verified Metrics Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+              {/* Verified Metrics Cards (High-Gloss Glassmorphism) */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6 relative z-10">
                 {detailModalItem.metrics.map((m, mIdx) => (
                   <div
                     key={mIdx}
-                    className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10"
+                    className="group/metric relative p-4 rounded-2xl bg-gradient-to-b from-white/[0.07] to-white/[0.02] border border-white/[0.12] hover:border-white/25 transition-all duration-300 hover:shadow-lg backdrop-blur-md overflow-hidden"
                   >
-                    <span className="block font-mono text-[10px] uppercase tracking-wider text-white/50 mb-1">
+                    <div
+                      className="absolute top-0 right-0 w-16 h-16 rounded-full blur-2xl opacity-10 group-hover/metric:opacity-30 transition-opacity"
+                      style={{ backgroundColor: detailModalItem.theme.accentText }}
+                    />
+                    <span className="block font-mono text-[10px] uppercase tracking-wider text-slate-400 font-semibold mb-1">
                       {m.label}
                     </span>
-                    <span className="font-display font-bold text-sm sm:text-base text-white">
+                    <span className="font-['Space_Grotesk'] font-bold text-base sm:text-lg text-white block tracking-tight">
                       {m.value}
                     </span>
                   </div>
                 ))}
               </div>
 
-              {/* Core Deliverables */}
-              <div className="mb-6">
-                <span className="block font-mono text-xs uppercase tracking-wider text-white/50 mb-2.5">
-                  CORE DELIVERABLES & ARCHITECTURAL CAPABILITIES
-                </span>
-                <ul className="space-y-2">
+              {/* Core Deliverables List */}
+              <div className="mb-6 relative z-10">
+                <div className="flex items-center gap-2 mb-3">
+                  <div
+                    className="w-1 h-3.5 rounded-full"
+                    style={{ backgroundColor: detailModalItem.theme.accentText }}
+                  />
+                  <span className="font-mono text-xs uppercase tracking-wider text-slate-300 font-bold">
+                    CORE DELIVERABLES &amp; ARCHITECTURAL SPECIFICATIONS
+                  </span>
+                </div>
+
+                <div className="space-y-2.5 p-4 rounded-2xl bg-black/40 border border-white/[0.08] backdrop-blur-md">
                   {detailModalItem.bullets.map((bullet, bIdx) => (
-                    <li
+                    <div
                       key={bIdx}
-                      className="flex items-start gap-2.5 text-xs sm:text-sm text-white/80"
+                      className="flex items-start gap-3 text-xs sm:text-sm text-slate-200 leading-relaxed"
                     >
-                      <CheckCircle2
-                        className="w-4 h-4 flex-shrink-0 mt-0.5"
-                        style={{ color: detailModalItem.theme.accentText }}
-                      />
-                      <span>{bullet}</span>
-                    </li>
+                      <div
+                        className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5"
+                        style={{
+                          backgroundColor: "rgba(255, 255, 255, 0.06)",
+                          border: `1px solid ${detailModalItem.theme.borderHex}`,
+                        }}
+                      >
+                        <CheckCircle2
+                          className="w-3.5 h-3.5"
+                          style={{ color: detailModalItem.theme.accentText }}
+                        />
+                      </div>
+                      <span className="pt-0.5">{bullet}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
 
-              {/* Technology Stack Tags */}
-              <div className="mb-8">
-                <span className="block font-mono text-xs uppercase tracking-wider text-white/50 mb-2.5">
-                  PRIMARY TECHNOLOGY STACK
+              {/* Primary Tech Stack with Glowing Pills */}
+              <div className="mb-7 relative z-10">
+                <span className="block font-mono text-xs uppercase tracking-wider text-slate-400 font-bold mb-2.5">
+                  VERIFIED RUNTIME &amp; INFRASTRUCTURE STACK
                 </span>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {detailModalItem.techStack.map((tech, tIdx) => (
                     <span
                       key={tIdx}
-                      className="font-mono text-xs px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-white/80"
+                      className="font-mono text-[11px] sm:text-xs px-3 py-1 rounded-lg bg-gradient-to-r from-white/[0.08] to-white/[0.03] border border-white/10 hover:border-white/25 text-slate-200 transition-all cursor-default shadow-sm hover:scale-105"
                     >
                       {tech}
                     </span>
@@ -664,22 +729,27 @@ export default function Services({ onViewFullPage }: { onViewFullPage?: () => vo
                 </div>
               </div>
 
-              {/* Modal CTA Buttons */}
-              <div className="flex flex-col sm:flex-row items-center justify-end gap-3 pt-4 border-t border-white/10">
+              {/* Modal Bottom Actions */}
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-5 border-t border-white/[0.1] relative z-10">
                 <button
                   type="button"
                   onClick={() => setDetailModalItem(null)}
-                  className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-xs font-mono uppercase tracking-wider text-white/60 hover:text-white transition-colors cursor-pointer"
+                  className="w-full sm:w-auto px-5 py-2.5 rounded-full text-xs font-mono font-semibold uppercase tracking-wider text-slate-400 hover:text-white transition-colors cursor-pointer text-center"
                 >
-                  Close
+                  Close Window
                 </button>
+
                 <a
                   href="#contact"
                   onClick={() => setDetailModalItem(null)}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-xs font-mono uppercase tracking-wider text-black font-semibold bg-white hover:bg-white/90 transition-all shadow-md cursor-pointer"
+                  className="w-full sm:w-auto relative group inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3 rounded-full text-xs sm:text-sm font-bold font-mono uppercase tracking-wider text-white overflow-hidden shadow-[0_0_30px_rgba(250,100,0,0.45)] hover:shadow-[0_0_40px_rgba(250,100,0,0.7)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
                 >
-                  <span>Inquire About {detailModalItem.title}</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#FA6400] via-[#FF5E62] to-[#E60038]" />
+                  <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span className="relative z-10 flex items-center gap-2">
+                    <span>Inquire About {detailModalItem.title.split(" ")[0]}</span>
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </span>
                 </a>
               </div>
             </motion.div>

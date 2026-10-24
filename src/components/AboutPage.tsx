@@ -64,7 +64,7 @@ const MILESTONES = [
   {
     year: "2021",
     title: "Incorporation & Core Systems Practice",
-    desc: "VR PI Group founded with a charter to deliver high-velocity, fault-tolerant digital software architectures for banking, asset management, and enterprise logistics.",
+    desc: "VR PI Tech Solutions founded with a charter to deliver high-velocity, fault-tolerant digital software architectures for banking, asset management, and enterprise logistics.",
   },
   {
     year: "2022",
@@ -104,7 +104,7 @@ export default function AboutPage({ onNavigateHome }: { onNavigateHome?: () => v
   }, []);
 
   return (
-    <div className="w-full bg-white text-slate-900 min-h-screen pt-24 sm:pt-28 pb-16 font-sans">
+    <div className="w-full bg-white text-slate-900 min-h-screen pt-28 sm:pt-32 pb-16 font-sans">
       {/* Subtle warm ambient background highlights */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-[#FA6400]/[0.035] rounded-full blur-[160px]" />
@@ -119,10 +119,10 @@ export default function AboutPage({ onNavigateHome }: { onNavigateHome?: () => v
           initial={prefersReducedMotion ? false : { opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-12 sm:mb-16"
+          className="mb-8 sm:mb-10"
         >
           {/* Breadcrumb */}
-          <div className="flex items-center gap-2 mb-6 text-xs font-mono text-slate-500">
+          <div className="flex items-center gap-2 mb-4 sm:mb-5 text-xs font-mono text-slate-500">
             <button
               type="button"
               onClick={onNavigateHome}
@@ -189,7 +189,7 @@ export default function AboutPage({ onNavigateHome }: { onNavigateHome?: () => v
               <div className="relative rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-xl">
                 <img
                   src="/images/about-team.jpg"
-                  alt="VR PI Group Executive Leadership Team"
+                  alt="VR PI Tech Solutions Executive Leadership Team"
                   className="w-full aspect-[4/3] sm:aspect-[1.15/1] object-cover object-top transition-transform duration-700 group-hover:scale-102"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none" />
@@ -225,7 +225,7 @@ export default function AboutPage({ onNavigateHome }: { onNavigateHome?: () => v
                 <p className="text-lg sm:text-xl lg:text-[22px] leading-relaxed text-slate-800 font-normal">
                   &ldquo;
                   <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#E65100] via-[#FA6400] to-[#E60038]">
-                    VR PI Group of Companies
+                    VR PI Tech Solutions
                   </span>
                   &rdquo; thrives as a dynamic and forward-thinking enterprise, specializing in cutting-edge industry solutions. Our core emphasis on pioneering software technology ensures the delivery of top-tier services, all while nurturing a culture of creativity, inclusivity, and unwavering excellence.
                 </p>
@@ -461,7 +461,7 @@ export default function AboutPage({ onNavigateHome }: { onNavigateHome?: () => v
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-black font-['Space_Grotesk'] text-white mb-4">
-                VR PI Group of Companies
+                VR PI Tech Solutions
               </h2>
 
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">

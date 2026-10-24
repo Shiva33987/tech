@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { ArrowUpRight, Menu, X, Compass, Sparkles } from "lucide-react";
+import { ArrowUpRight, Compass, Sparkles } from "lucide-react";
 
 export type AppPage = "home" | "services" | "blog" | "about" | "contact";
 
@@ -20,7 +20,6 @@ const NAV_ITEMS = [
 
 export default function Navbar({ currentPage = "home", onNavigate }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,7 +31,6 @@ export default function Navbar({ currentPage = "home", onNavigate }: NavbarProps
 
   const handleItemClick = (e: React.MouseEvent, page: AppPage, targetId: string) => {
     e.preventDefault();
-    setMobileMenuOpen(false);
 
     if (onNavigate) {
       onNavigate(page, targetId);
@@ -107,7 +105,7 @@ export default function Navbar({ currentPage = "home", onNavigate }: NavbarProps
             })}
           </nav>
 
-          {/* Right Action: Get Started CTA & Mobile Menu Toggle */}
+          {/* Right Action: Get Started CTA */}
           <div className="flex items-center gap-2 sm:gap-3">
             <a
               href="#contact"
@@ -120,17 +118,6 @@ export default function Navbar({ currentPage = "home", onNavigate }: NavbarProps
                 Get Started
               </span>
             </a>
-
-            {/* Mobile Hamburger Toggle */}
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-full bg-white/[0.08] hover:bg-white/[0.15] border border-white/10 text-white transition-colors cursor-pointer"
-              aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
-              aria-expanded={mobileMenuOpen}
-            >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
           </div>
         </div>
 
@@ -166,44 +153,6 @@ export default function Navbar({ currentPage = "home", onNavigate }: NavbarProps
           </nav>
         </div>
       </div>
-
-      {/* Mobile Drawer Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-x-4 top-20 p-5 rounded-3xl bg-black/90 backdrop-blur-3xl border border-white/[0.15] shadow-[0_20px_50px_rgba(0,0,0,0.85)] flex flex-col gap-2.5 animate-in fade-in slide-in-from-top-4 duration-200">
-          {NAV_ITEMS.map((item) => {
-            const isActive =
-              (item.label === "Services" && currentPage === "services") ||
-              (item.label === "Blog" && currentPage === "blog") ||
-              (item.label === "About" && currentPage === "about") ||
-              (item.label === "Contact us" && currentPage === "contact") ||
-              (item.label === "Home" && currentPage === "home");
-
-            return (
-              <a
-                key={item.label}
-                href={`#${item.targetId}`}
-                onClick={(e) => handleItemClick(e, item.page, item.targetId)}
-                className={`px-4 py-2.5 rounded-xl text-base font-medium transition-colors cursor-pointer ${
-                  isActive
-                    ? "bg-white/[0.15] text-white font-bold border border-white/20"
-                    : "text-white/80 hover:text-white hover:bg-white/[0.08]"
-                }`}
-              >
-                {item.label}
-              </a>
-            );
-          })}
-          <div className="pt-2 border-t border-white/10">
-            <a
-              href="#contact"
-              onClick={(e) => handleItemClick(e, "contact", "contact-top")}
-              className="w-full py-3 rounded-full text-center text-sm font-semibold text-white bg-gradient-to-r from-[#FF3366] to-[#FF5E62] block shadow-[0_0_20px_rgba(255,51,102,0.4)] cursor-pointer"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
-      )}
     </header>
   );
 }

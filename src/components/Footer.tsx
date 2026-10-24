@@ -183,60 +183,64 @@ export default function Footer() {
               <h3 className="text-xs sm:text-sm font-bold font-display uppercase tracking-wider text-white mb-3 flex items-center justify-between">
                 <span className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#E60038]" />
-                  <span>Contact Us</span>
+                  <span>Our Branch Locations</span>
                 </span>
                 <span className="text-[9px] sm:text-[10px] font-mono font-semibold text-[#FFA040] bg-[#FA6400]/15 px-2 py-0.5 rounded-full border border-[#FA6400]/30">
-                  Headquarters
+                  Global Offices
                 </span>
               </h3>
 
-              {/* Physical Address */}
-              <div className="flex items-start gap-2.5 mb-2.5 pb-2.5 border-b border-white/[0.08]">
-                <div className="w-7 h-7 rounded-lg bg-[#E60038]/15 border border-[#E60038]/30 flex items-center justify-center shrink-0 mt-0.5">
-                  <MapPin className="w-3.5 h-3.5 text-[#FF4D6D]" />
+              {/* Branch 1: Wanaparthy (India) */}
+              <div className="mb-2.5 pb-2.5 border-b border-white/[0.08]">
+                <div className="flex items-center gap-1.5 text-xs font-semibold text-[#FA6400] mb-1">
+                  <MapPin className="w-3.5 h-3.5 shrink-0 text-[#E60038]" />
+                  <span>Wanaparthy (India) - Registered Address</span>
                 </div>
-                <div className="text-[11px] sm:text-xs leading-snug text-slate-200">
-                  <p className="font-semibold text-white">2/27/163, GANDHI NAGAR STREET,</p>
-                  <p className="text-slate-300">NEAR JAMMI CHETTU, WANAPARTHY, TELANGANA, <span className="font-mono font-semibold text-rose-300">509103</span></p>
-                </div>
-              </div>
-
-              {/* Phone Line */}
-              <div className="flex items-start gap-2.5 mb-2.5 pb-2.5 border-b border-white/[0.08]">
-                <div className="w-7 h-7 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                  <PhoneCall className="w-3.5 h-3.5 text-emerald-400" />
-                </div>
-                <div>
-                  <a
-                    href="tel:+918790946714"
-                    className="text-xs font-semibold font-mono text-white hover:text-emerald-300 transition-colors block"
-                  >
-                    +91 8790946714
-                  </a>
-                  <span className="text-[10px] text-slate-400 flex items-center gap-1 mt-0.5">
-                    <Clock className="w-2.5 h-2.5 text-slate-400" />
-                    <span>Mon – Sat, 9:00 AM – 7:00 PM IST</span>
-                  </span>
+                <p className="text-[11px] text-slate-300 leading-snug pl-5">
+                  Door No: 2-27-163, Gandhi Nagar, Near Jammichettu, Wanaparthy, Telangana-509103, India
+                </p>
+                <div className="flex items-center gap-3 text-[11px] font-mono text-slate-300 pl-5 mt-1">
+                  <a href="tel:+918790946714" className="hover:text-emerald-400 transition-colors">+91 8790946714</a>
                 </div>
               </div>
 
-              {/* Email Address */}
-              <div className="flex items-start gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-[#FA6400]/15 border border-[#FA6400]/30 flex items-center justify-center shrink-0 mt-0.5">
-                  <Mail className="w-3.5 h-3.5 text-[#FFA040]" />
+              {/* Branch 2: Hyderabad (India) */}
+              <div className="mb-2.5 pb-2.5 border-b border-white/[0.08]">
+                <div className="flex items-center gap-1.5 text-xs font-semibold text-[#FA6400] mb-1">
+                  <MapPin className="w-3.5 h-3.5 shrink-0 text-[#E60038]" />
+                  <span>Hyderabad (India)</span>
                 </div>
-                <div>
-                  <a
-                    href="mailto:info@vrpigroup.co.in"
-                    className="text-xs font-semibold font-mono text-white hover:text-[#FFA040] transition-colors block break-all"
-                  >
+                <p className="text-[11px] text-slate-300 leading-snug pl-5">
+                  8th Floor (B-Block), Meenakshi Tech Park, Phase-2, Gachibowli, Hyderabad, Telangana 500032, India
+                </p>
+                <div className="flex items-center gap-3 text-[11px] font-mono text-slate-300 pl-5 mt-1">
+                  <a href="tel:+918790946714" className="hover:text-emerald-400 transition-colors">+91 8790946714</a>
+                </div>
+              </div>
+
+              {/* Branch 3: New Jersey (USA) */}
+              <div className="mb-2 pb-2">
+                <div className="flex items-center gap-1.5 text-xs font-semibold text-[#FA6400] mb-1">
+                  <MapPin className="w-3.5 h-3.5 shrink-0 text-[#E60038]" />
+                  <span>New Jersey (USA)</span>
+                </div>
+                <p className="text-[11px] text-slate-300 leading-snug pl-5">
+                  5 Greentree Center, Door No: 525, Route 73, STE 104, Marlton, New Jersey, USA 08053
+                </p>
+                <div className="flex items-center gap-3 text-[11px] font-mono text-slate-300 pl-5 mt-1">
+                  <a href="tel:+16467418264" className="hover:text-emerald-400 transition-colors">(+1)646-741-8264</a>
+                </div>
+              </div>
+
+              {/* Central Email Line */}
+              <div className="pt-2 border-t border-white/[0.08] flex items-center justify-between text-[11px] font-mono">
+                <div className="flex items-center gap-1.5 text-slate-300">
+                  <Mail className="w-3 h-3 text-[#FFA040]" />
+                  <a href="mailto:info@vrpigroup.co.in" className="hover:text-white transition-colors">
                     info@vrpigroup.co.in
                   </a>
-                  <span className="text-[10px] text-slate-400 flex items-center gap-1 mt-0.5">
-                    <CheckCircle2 className="w-2.5 h-2.5 text-emerald-400" />
-                    <span>Guaranteed Response within 24h</span>
-                  </span>
                 </div>
+                <span className="text-[10px] text-emerald-400">Response &lt; 24h</span>
               </div>
             </div>
           </div>

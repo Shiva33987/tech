@@ -66,13 +66,13 @@ export const DETAILED_SERVICES: ServiceDetail[] = [
       "We design and engineer enterprise mobile platforms handling mission-critical transactional loads. From fintech-grade biometric vaults and zero-latency WebSocket feeds to cross-platform codebases that never sacrifice native fluidity.",
     icon: Smartphone,
     image: "/images/service-mobile.jpg",
-    accentColor: "#E879F9",
-    accentBg: "bg-fuchsia-500/10",
-    accentBorder: "border-fuchsia-500/30",
+    accentColor: "#FA6400",
+    accentBg: "bg-orange-50",
+    accentBorder: "border-orange-200",
     metrics: [
-      { label: "Crash-Free Rate", value: "99.98%", note: "Across 2.4M active devices" },
-      { label: "API Sync Latency", value: "< 50ms P99", note: "Encrypted WebSocket pipeline" },
-      { label: "Cold Start Time", value: "< 420ms", note: "Optimized native binary trees" },
+      { label: "Crash-Free Rate", value: "99.98%", note: "Across 2.4M devices" },
+      { label: "API Sync Latency", value: "< 50ms P99", note: "Encrypted WebSocket" },
+      { label: "Cold Start Time", value: "< 420ms", note: "Optimized native trees" },
     ],
     deliverables: [
       "Native iOS (Swift) & Android (Kotlin) specialized architecture",
@@ -100,13 +100,13 @@ export const DETAILED_SERVICES: ServiceDetail[] = [
       "We build resilient digital experiences that blend consumer-grade speed with enterprise security. Serverless micro-frontends, sub-35ms global CDN delivery, multi-tenant RBAC, and bespoke interactive visualizations that transform complex data into actionable insight.",
     icon: Globe,
     image: "/images/service-web.jpg",
-    accentColor: "#2DD4BF",
-    accentBg: "bg-teal-500/10",
-    accentBorder: "border-teal-500/30",
+    accentColor: "#0D9488",
+    accentBg: "bg-teal-50",
+    accentBorder: "border-teal-200",
     metrics: [
       { label: "Core Web Vitals", value: "100/100", note: "Perfect Lighthouse score" },
-      { label: "Global Edge TTL", value: "< 35ms", note: "Distributed Cloudflare CDN" },
-      { label: "Uptime SLA", value: "99.999%", note: "Zero-downtime rolling deploys" },
+      { label: "Global Edge TTL", value: "< 35ms", note: "Distributed Cloudflare" },
+      { label: "Uptime SLA", value: "99.999%", note: "Zero-downtime deploys" },
     ],
     deliverables: [
       "Full-stack Next.js & React 19 enterprise architectures",
@@ -134,13 +134,13 @@ export const DETAILED_SERVICES: ServiceDetail[] = [
       "Modern business process outsourcing combines skilled multi-lingual teams with proprietary automated workflow agents. We streamline front-office customer engagement, complex back-office data pipelines, and technical support queues with audited accuracy.",
     icon: Headphones,
     image: "/images/service-software.jpg",
-    accentColor: "#F472B6",
-    accentBg: "bg-pink-500/10",
-    accentBorder: "border-pink-500/30",
+    accentColor: "#E60038",
+    accentBg: "bg-rose-50",
+    accentBorder: "border-rose-200",
     metrics: [
-      { label: "First Contact Res", value: "94.8%", note: "Tier-1 & Tier-2 inquiries" },
-      { label: "Process SLA", value: "99.7%", note: "Audited milestone compliance" },
-      { label: "Operational Cost", value: "-45%", note: "Average reduction for clients" },
+      { label: "First Contact Res", value: "94.8%", note: "Tier-1 & Tier-2" },
+      { label: "Process SLA", value: "99.7%", note: "Audited compliance" },
+      { label: "Operational Cost", value: "-45%", note: "Average reduction" },
     ],
     deliverables: [
       "24/7/365 Omni-channel Tier-1 to Tier-3 technical support desks",
@@ -168,13 +168,13 @@ export const DETAILED_SERVICES: ServiceDetail[] = [
       "Transforming urban advertising into an intelligent, programmatic medium. Our DOOH platform orchestrates thousands of high-brightness LED displays across transit hubs, commercial corridors, and urban landmarks with sub-second schedule propagation and proof-of-play auditing.",
     icon: Tv,
     image: "/images/service-marketing.jpg",
-    accentColor: "#38BDF8",
-    accentBg: "bg-sky-500/10",
-    accentBorder: "border-sky-500/30",
+    accentColor: "#0284C7",
+    accentBg: "bg-sky-50",
+    accentBorder: "border-sky-200",
     metrics: [
-      { label: "Daily Reach", value: "3.5M+ Eyes", note: "Verified metro impressions" },
-      { label: "Screen Network", value: "120+ Prime", note: "Railway, airport & tech hubs" },
-      { label: "CMS Sync SLA", value: "< 1.5s", note: "Real-time edge broadcast" },
+      { label: "Daily Reach", value: "3.5M+ Eyes", note: "Metro impressions" },
+      { label: "Screen Network", value: "120+ Prime", note: "Railway & hubs" },
+      { label: "CMS Sync SLA", value: "< 1.5s", note: "Real-time edge" },
     ],
     deliverables: [
       "High-density commercial LED billboard & transit corridor displays",
@@ -202,13 +202,13 @@ export const DETAILED_SERVICES: ServiceDetail[] = [
       "We design and operate collaborative tech sanctuaries featuring dual-mesh gigabit routing, soundproofed video production pods, ergonomic workstations, and automated room scheduling. Built to host engineering teams, startup founders, and enterprise regional hubs.",
     icon: Building,
     image: "/images/service-coworking.jpg",
-    accentColor: "#FBBF24",
-    accentBg: "bg-amber-500/10",
-    accentBorder: "border-amber-500/30",
+    accentColor: "#D97706",
+    accentBg: "bg-amber-50",
+    accentBorder: "border-amber-200",
     metrics: [
-      { label: "Bandwidth Mesh", value: "Dual 1 Gbps", note: "Redundant fiber ISP failover" },
-      { label: "Security", value: "24/7 Access", note: "Biometric NFC encryption" },
-      { label: "Occupancy Rate", value: "98.2%", note: "Consistently occupied tech hubs" },
+      { label: "Bandwidth Mesh", value: "Dual 1 Gbps", note: "Fiber ISP failover" },
+      { label: "Security", value: "24/7 Access", note: "Biometric NFC" },
+      { label: "Occupancy Rate", value: "98.2%", note: "Consistently booked" },
     ],
     deliverables: [
       "Dedicated private cabins, flexible hot-desks & executive boardrooms",
@@ -236,13 +236,13 @@ export const DETAILED_SERVICES: ServiceDetail[] = [
       "We build learning management ecosystems that personalize student growth. Integrating adaptive neural difficulty engines, low-latency WebRTC group classrooms, automated anti-cheat exam proctoring, and comprehensive institutional analytics for schools and enterprise universities.",
     icon: GraduationCap,
     image: "/images/service-edutech.jpg",
-    accentColor: "#60A5FA",
-    accentBg: "bg-blue-500/10",
-    accentBorder: "border-blue-500/30",
+    accentColor: "#2563EB",
+    accentBg: "bg-blue-50",
+    accentBorder: "border-blue-200",
     metrics: [
-      { label: "Concurrent Scale", value: "100k+ Active", note: "Simultaneous exam test-takers" },
-      { label: "Video Latency", value: "< 180ms", note: "Interactive WebRTC streaming" },
-      { label: "Student Pass Rate", value: "+38%", note: "Through adaptive AI pathways" },
+      { label: "Concurrent Scale", value: "100k+ Active", note: "Simultaneous test" },
+      { label: "Video Latency", value: "< 180ms", note: "WebRTC streaming" },
+      { label: "Student Pass Rate", value: "+38%", note: "Adaptive pathways" },
     ],
     deliverables: [
       "Modular cloud LMS supporting courses, graded assessments & live lectures",
@@ -292,75 +292,72 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
   });
 
   return (
-    <div className="w-full bg-[#080B10] text-white min-h-screen pt-24 sm:pt-28 pb-16 font-sans relative">
-      {/* Refined Enterprise Ambient Atmosphere */}
-      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-        {/* Subtle, highly diffused top ambient wash */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-[420px] bg-gradient-to-b from-[#FA6400]/[0.05] via-[#E60038]/[0.03] to-transparent blur-3xl pointer-events-none" />
-        {/* Crisp enterprise micro-grid */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
+    <div className="w-full bg-white text-slate-900 min-h-screen pt-28 sm:pt-32 pb-12 font-sans relative">
+      {/* Subtle warm ambient background highlights */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-[#FA6400]/[0.035] rounded-full blur-[160px]" />
+        <div className="absolute bottom-1/4 -right-32 w-[600px] h-[600px] bg-[#E60038]/[0.025] rounded-full blur-[160px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
         {/* ========================================================= */}
         {/* SERVICES HERO BANNER (Animated Slide-up)                  */}
         {/* ========================================================= */}
         <motion.div
-          initial={prefersReducedMotion ? false : { opacity: 0, y: 35 }}
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-12 sm:mb-16"
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-6 sm:mb-8"
         >
           {/* Breadcrumb / Back Navigation */}
-          <div className="flex items-center gap-2 mb-6 text-xs font-mono text-slate-400">
+          <div className="flex items-center gap-2 mb-4 sm:mb-5 text-xs font-mono text-slate-500">
             <button
               type="button"
               onClick={onNavigateHome}
-              className="hover:text-white transition-colors cursor-pointer flex items-center gap-1 group"
+              className="hover:text-slate-900 transition-colors cursor-pointer flex items-center gap-1 group"
             >
               <span className="group-hover:-translate-x-0.5 transition-transform">&larr;</span>
               <span>Home</span>
             </button>
             <span>/</span>
-            <span className="text-[#FA6400] font-semibold">Services &amp; Practice Areas</span>
+            <span className="text-[#E65100] font-semibold">Services &amp; Practice Areas</span>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-white/[0.08]">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-5 pb-5 sm:pb-6 border-b border-slate-200">
             <div className="max-w-3xl">
-              <motion.div
-                initial={prefersReducedMotion ? false : { opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono text-[#FA6400] mb-4 shadow-sm"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-[#FA6400] animate-pulse" />
-                <span>FULL-SPECTRUM ENTERPRISE PRACTICE AREAS</span>
-              </motion.div>
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black font-['Space_Grotesk'] text-white tracking-tight leading-[1.1]">
-                Engineering Scalable Software, Media, &amp; Smart Infrastructure
-              </h1>
-              <p className="text-base sm:text-lg text-slate-300 mt-4 leading-relaxed font-normal">
+              <div className="flex items-center gap-3 sm:gap-4 mb-2">
+                <div className="w-1.5 sm:w-2 h-9 sm:h-11 rounded-full bg-gradient-to-b from-[#FA6400] to-[#E60038] shadow-[0_0_12px_rgba(250,100,0,0.3)] shrink-0" />
+                <div>
+                  <span className="font-mono text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#E65100] block mb-0.5">
+                    FULL-SPECTRUM ENTERPRISE PRACTICE AREAS
+                  </span>
+                  <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black font-['Space_Grotesk'] text-slate-950 tracking-tight leading-[1.15]">
+                    Engineering Scalable Software, Media, &amp; Smart Infrastructure
+                  </h1>
+                </div>
+              </div>
+              <p className="text-sm sm:text-base text-slate-700 mt-2 sm:mt-3 leading-relaxed font-normal pl-4 sm:pl-5">
                 We empower forward-thinking organizations with industrial-grade mobile applications, edge web architectures, intelligent BPO operations, programmatic DOOH advertising, smart tech spaces, and interactive Edu-Tech.
               </p>
             </div>
 
-            {/* Quick Metrics Badge Strip with Subtle Hover Lift */}
+            {/* Quick Metrics Badge Strip */}
             <motion.div
-              whileHover={{ y: -3 }}
-              transition={{ duration: 0.25 }}
-              className="flex lg:flex-col gap-4 sm:gap-6 bg-white/[0.03] border border-white/10 p-5 rounded-2xl shrink-0 shadow-lg"
+              whileHover={{ y: -2 }}
+              transition={{ duration: 0.2 }}
+              className="flex lg:flex-col gap-4 sm:gap-4 bg-slate-50 border border-slate-200 p-3.5 sm:p-4 rounded-2xl shrink-0 shadow-sm"
             >
               <div>
-                <span className="text-2xl sm:text-3xl font-extrabold text-white font-['Space_Grotesk'] block">
+                <span className="text-xl sm:text-2xl font-extrabold text-slate-950 font-['Space_Grotesk'] block leading-none">
                   99.999%
                 </span>
-                <span className="text-xs font-mono text-slate-400">Platform Uptime SLA</span>
+                <span className="text-[10px] sm:text-xs font-mono text-slate-500 block mt-1">Platform Uptime SLA</span>
               </div>
-              <div className="lg:border-t lg:border-white/10 lg:pt-3">
-                <span className="text-2xl sm:text-3xl font-extrabold text-[#FA6400] font-['Space_Grotesk'] block">
+              <div className="lg:border-t lg:border-slate-200 lg:pt-2.5">
+                <span className="text-xl sm:text-2xl font-extrabold text-[#E65100] font-['Space_Grotesk'] block leading-none">
                   06 Practices
                 </span>
-                <span className="text-xs font-mono text-slate-400">Full-Lifecycle Delivery</span>
+                <span className="text-[10px] sm:text-xs font-mono text-slate-500 block mt-1">Full-Lifecycle Delivery</span>
               </div>
             </motion.div>
           </div>
@@ -370,10 +367,10 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
         {/* INTERACTIVE FILTER & SEARCH BAR                           */}
         {/* ========================================================= */}
         <motion.div
-          initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 mb-10"
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3.5 mb-6 sm:mb-8"
         >
           {/* Category Tabs */}
           <div className="flex items-center gap-2 overflow-x-auto pb-1 max-w-full no-scrollbar">
@@ -384,10 +381,10 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
                   key={cat}
                   whileTap={prefersReducedMotion ? {} : { scale: 0.96 }}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-4 py-2 rounded-full text-xs font-mono whitespace-nowrap transition-all duration-300 cursor-pointer border ${
+                  className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs font-mono whitespace-nowrap transition-all duration-300 cursor-pointer border ${
                     isActive
-                      ? "bg-white text-black font-bold border-white shadow-[0_0_25px_rgba(255,255,255,0.35)]"
-                      : "bg-white/[0.03] text-slate-400 border-white/10 hover:border-white/25 hover:text-white"
+                      ? "bg-slate-950 text-white font-bold border-slate-950 shadow-md"
+                      : "bg-slate-100 text-slate-600 border-slate-200 hover:border-slate-300 hover:text-slate-900"
                   }`}
                 >
                   {cat}
@@ -397,20 +394,20 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
           </div>
 
           {/* Search Input */}
-          <div className="relative min-w-[260px] sm:min-w-[300px]">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
+          <div className="relative min-w-full sm:min-w-[280px]">
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Filter by tech or keyword..."
-              className="w-full pl-10 pr-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs sm:text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-[#FA6400] transition-colors"
+              className="w-full pl-10 pr-4 py-2 rounded-full bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#FA6400] focus:ring-1 focus:ring-[#FA6400] transition-colors"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery("")}
-                className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white"
+                className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 cursor-pointer"
               >
                 <X className="w-3.5 h-3.5" />
               </button>
@@ -421,7 +418,7 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
         {/* ========================================================= */}
         {/* DETAILED SERVICES SHOWCASE (BENTO GRID WITH FLUID MOTION) */}
         {/* ========================================================= */}
-        <div className="space-y-12 mb-20">
+        <div className="space-y-8 sm:space-y-12 mb-16 sm:mb-20">
           <AnimatePresence mode="popLayout">
             {filteredServices.map((service, index) => {
               const Icon = service.icon;
@@ -448,37 +445,37 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
                           transition: { duration: 0.35, ease: [0.16, 1, 0.3, 1] },
                         }
                   }
-                  className="group relative rounded-3xl overflow-hidden border border-white/[0.12] bg-[#0A0D14] hover:border-white/35 transition-all duration-500 shadow-[0_15px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] p-6 sm:p-8 lg:p-10"
+                  className="group relative rounded-[26px] sm:rounded-3xl overflow-hidden border border-slate-200/90 bg-white hover:border-slate-300 hover:shadow-2xl transition-all duration-500 shadow-xl p-4 sm:p-7 lg:p-9"
                 >
-                  {/* Accent Color Dynamic Glow */}
+                  {/* Subtle accent glow */}
                   <div
-                    className="absolute -top-24 -right-24 w-80 h-80 rounded-full blur-[140px] opacity-20 group-hover:opacity-40 group-hover:scale-125 transition-all duration-700 pointer-events-none"
+                    className="absolute -top-24 -right-24 w-80 h-80 rounded-full blur-[140px] opacity-15 group-hover:opacity-25 group-hover:scale-125 transition-all duration-700 pointer-events-none"
                     style={{ backgroundColor: service.accentColor }}
                   />
 
-                  <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center ${isReversed ? "lg:flex-row-reverse" : ""}`}>
+                  <div className={`grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 lg:gap-12 items-center ${isReversed ? "lg:flex-row-reverse" : ""}`}>
                     {/* Media Column (5 cols) */}
                     <div className={`lg:col-span-5 relative ${isReversed ? "lg:order-2" : "lg:order-1"}`}>
-                      <div className="relative rounded-2xl overflow-hidden border border-white/15 aspect-[4/3] sm:aspect-[1.25/1] shadow-xl group-hover:shadow-2xl transition-all">
+                      <div className="relative rounded-2xl overflow-hidden border border-slate-200 aspect-[16/10] sm:aspect-[4/3] lg:aspect-[1.25/1] shadow-md group-hover:shadow-xl transition-all">
                         <img
                           src={service.image}
                           alt={service.title}
-                          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-108 brightness-90 group-hover:brightness-100"
+                          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
 
                         {/* Number Pill Overlay */}
-                        <div className="absolute top-4 left-4 px-3 py-1.5 rounded-xl bg-black/70 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-white flex items-center gap-2 group-hover:border-white/40 transition-colors">
+                        <div className="absolute top-3 left-3 sm:top-4 sm:left-4 px-2.5 sm:px-3 py-1 rounded-xl bg-slate-950/85 backdrop-blur-md border border-white/20 text-[11px] sm:text-xs font-mono font-bold text-white flex items-center gap-1.5 sm:gap-2">
                           <Icon className="w-3.5 h-3.5" style={{ color: service.accentColor }} />
                           <span>DISCIPLINE {service.number}</span>
                         </div>
 
                         {/* Case Study Snippet Preview */}
-                        <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-white/15 text-xs">
-                          <span className="block font-mono text-[10px] text-amber-400 uppercase tracking-wider mb-0.5">
+                        <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 p-3 sm:p-3.5 rounded-xl bg-slate-950/90 backdrop-blur-md border border-white/15 text-xs text-white">
+                          <span className="block font-mono text-[10px] text-amber-400 uppercase tracking-wider mb-0.5 font-bold">
                             VERIFIED CLIENT OUTCOME
                           </span>
-                          <p className="text-white/90 line-clamp-2 leading-relaxed">
+                          <p className="text-slate-200 line-clamp-2 leading-relaxed text-[11.5px] sm:text-xs">
                             {service.caseStudy.outcome}
                           </p>
                         </div>
@@ -488,78 +485,83 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
                     {/* Editorial & Capabilities Column (7 cols) */}
                     <div className={`lg:col-span-7 flex flex-col justify-between ${isReversed ? "lg:order-1" : "lg:order-2"}`}>
                       <div>
-                        {/* Category Badge & Title */}
-                        <div className="flex items-center justify-between gap-4 mb-2">
+                        {/* Category Badge & Index Indicator */}
+                        <div className="flex items-center justify-between gap-4 mb-2.5">
                           <span
-                            className={`px-3 py-1 rounded-md text-[11px] font-mono font-bold tracking-wider uppercase border transition-transform duration-300 group-hover:scale-102 ${service.accentBg} ${service.accentBorder}`}
-                            style={{ color: service.accentColor }}
+                            className="px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-wider uppercase border shadow-sm"
+                            style={{
+                              color: service.accentColor,
+                              backgroundColor: `${service.accentColor}12`,
+                              borderColor: `${service.accentColor}35`,
+                            }}
                           >
                             {service.category}
                           </span>
-                          <span className="font-mono text-xs text-slate-500">
+                          <span className="font-mono text-xs text-slate-400 font-semibold tracking-wider">
                             {service.number} / 06
                           </span>
                         </div>
 
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-['Space_Grotesk'] text-white tracking-tight leading-snug mb-3 group-hover:text-amber-100 transition-colors">
+                        {/* Headline in Signature Vibrant Orange/Gradient Pop */}
+                        <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold font-['Space_Grotesk'] text-[#FA6400] tracking-tight leading-tight mb-2.5">
                           {service.title}
                         </h2>
 
-                        <p className="text-sm sm:text-base font-medium text-slate-200 mb-4 leading-relaxed">
+                        <p className="text-sm sm:text-base font-semibold text-slate-900 mb-2.5 leading-snug">
                           {service.tagline}
                         </p>
 
-                        <p className="text-xs sm:text-sm text-slate-400 mb-6 leading-relaxed">
+                        <p className="text-xs sm:text-sm text-slate-600 mb-4 leading-relaxed">
                           {service.description}
                         </p>
 
-                        {/* Verified Metrics Row with Tile Micro-Hover */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6 p-4 rounded-2xl bg-white/[0.02] border border-white/10">
+                        {/* Verified Metrics Row - 3 Columns on all screens including Mobile */}
+                        <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-4 sm:mb-5 p-2.5 sm:p-4 rounded-2xl bg-slate-50/90 border border-slate-200/80">
                           {service.metrics.map((m, mIdx) => (
                             <div
                               key={mIdx}
-                              className="p-2 rounded-xl hover:bg-white/[0.04] transition-colors"
+                              className="p-1 sm:p-2 rounded-xl transition-colors"
                             >
-                              <span className="block font-mono text-[10px] text-slate-500 uppercase tracking-wider">
+                              <span className="block font-mono text-[8.5px] sm:text-[10px] text-slate-500 uppercase tracking-wider font-semibold truncate">
                                 {m.label}
                               </span>
-                              <span className="text-base sm:text-lg font-bold text-white font-['Space_Grotesk'] block mt-0.5">
+                              <span className="text-xs sm:text-base lg:text-lg font-bold text-slate-950 font-['Space_Grotesk'] block mt-0.5 truncate">
                                 {m.value}
                               </span>
-                              <span className="text-[11px] text-slate-400 leading-tight block">
+                              <span className="text-[9.5px] sm:text-[11px] text-slate-500 leading-tight block truncate mt-0.5">
                                 {m.note}
                               </span>
                             </div>
                           ))}
                         </div>
 
-                        {/* Deliverables Checklist with Staggered Hover Slide */}
-                        <div className="space-y-2 mb-6">
-                          <span className="block font-mono text-xs uppercase tracking-wider text-slate-400 font-bold mb-1">
+                        {/* Deliverables Checklist with Tinted Check Badges */}
+                        <div className="space-y-2 mb-4 sm:mb-5">
+                          <span className="block font-mono text-[10.5px] sm:text-xs uppercase tracking-wider text-slate-600 font-bold mb-1">
                             CORE ARCHITECTURAL CAPABILITIES
                           </span>
                           <ul className="space-y-2">
                             {service.deliverables.slice(0, 3).map((item, idx) => (
                               <li
                                 key={idx}
-                                className="group/item flex items-start gap-2.5 text-xs sm:text-sm text-slate-300 hover:text-white transition-all duration-200 hover:translate-x-1"
+                                className="group/item flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 hover:text-slate-950 transition-all duration-200"
                               >
                                 <CheckCircle2
-                                  className="w-4 h-4 shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform"
+                                  className="w-4 h-4 shrink-0 mt-0.5"
                                   style={{ color: service.accentColor }}
                                 />
-                                <span>{item}</span>
+                                <span className="leading-snug">{item}</span>
                               </li>
                             ))}
                           </ul>
                         </div>
 
-                        {/* Tech Stack Chips with Micro-scale */}
-                        <div className="flex flex-wrap gap-1.5 mb-6">
+                        {/* Tech Stack Chips */}
+                        <div className="flex flex-wrap gap-1.5 mb-5 sm:mb-6">
                           {service.techStack.map((tech) => (
                             <span
                               key={tech}
-                              className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-white/[0.04] hover:bg-white/[0.09] hover:border-white/30 hover:scale-105 border border-white/10 text-slate-300 transition-all cursor-default"
+                              className="px-2.5 py-1 rounded-md text-[10.5px] sm:text-[11px] font-mono bg-slate-100/90 hover:bg-slate-200 border border-slate-200/90 text-slate-700 transition-all cursor-default"
                             >
                               {tech}
                             </span>
@@ -567,27 +569,27 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
                         </div>
                       </div>
 
-                      {/* Action Buttons with Spring Taps */}
-                      <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-4 border-t border-white/10">
+                      {/* Action Buttons: side by side on mobile matching desktop screenshot */}
+                      <div className="flex flex-row items-center gap-2.5 sm:gap-3 pt-3.5 sm:pt-4 border-t border-slate-200">
                         <motion.button
                           type="button"
-                          whileHover={prefersReducedMotion ? {} : { scale: 1.03 }}
-                          whileTap={prefersReducedMotion ? {} : { scale: 0.97 }}
+                          whileHover={prefersReducedMotion ? {} : { scale: 1.02 }}
+                          whileTap={prefersReducedMotion ? {} : { scale: 0.98 }}
                           onClick={() => setActiveModalService(service)}
-                          className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black font-mono text-xs font-bold uppercase tracking-wider hover:bg-slate-200 transition-all cursor-pointer shadow-md"
+                          className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-slate-950 text-white font-mono text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-slate-800 transition-all cursor-pointer shadow-md shrink-0"
                         >
                           <span>Deep Architecture Specs</span>
-                          <ArrowRight className="w-3.5 h-3.5" />
+                          <ArrowRight className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
                         </motion.button>
 
                         <motion.a
                           href="#contact"
                           whileHover={prefersReducedMotion ? {} : { scale: 1.02 }}
                           whileTap={prefersReducedMotion ? {} : { scale: 0.98 }}
-                          className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] text-white font-mono text-xs font-semibold tracking-wider transition-all border border-white/10 cursor-pointer"
+                          className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-mono text-[10.5px] sm:text-xs font-semibold tracking-wider transition-all border border-slate-200 cursor-pointer shrink-0"
                         >
                           <span>Inquire About {service.title.split(" ")[0]}</span>
-                          <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" />
+                          <ArrowUpRight className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-slate-500" />
                         </motion.a>
                       </div>
                     </div>
@@ -599,28 +601,28 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
         </div>
 
         {/* ========================================================= */}
-        {/* ENTERPRISE 4-STAGE DELIVERY PROTOCOL (With Stagger Motion)*/}
+        {/* ENTERPRISE 4-STAGE DELIVERY PROTOCOL                       */}
         {/* ========================================================= */}
         <motion.section
           initial={prefersReducedMotion ? false : { opacity: 0, y: 40 }}
           whileInView={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-20 rounded-3xl bg-[#090C12] border border-white/[0.1] p-8 sm:p-12 shadow-2xl relative overflow-hidden"
+          className="mb-16 sm:mb-20 rounded-3xl bg-slate-900 border border-slate-800 p-6 sm:p-12 shadow-xl relative overflow-hidden"
         >
-          <div className="max-w-2xl mb-10">
+          <div className="max-w-2xl mb-8 sm:mb-10">
             <span className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#FA6400] block mb-2">
               PRECISION SYSTEM LIFECYCLE
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold font-['Space_Grotesk'] text-white tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold font-['Space_Grotesk'] text-white tracking-tight">
               Our 4-Stage Architectural Protocol
             </h2>
-            <p className="text-sm sm:text-base text-slate-300 mt-2">
+            <p className="text-xs sm:text-base text-slate-300 mt-2">
               From zero-trust threat modeling to high-throughput chaos validation, every service deployment adheres to deterministic engineering rigor.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[
               {
                 step: "01",
@@ -666,15 +668,15 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
                     ? {}
                     : { y: -6, transition: { duration: 0.25 } }
                 }
-                className={`p-6 rounded-2xl bg-white/[0.02] border border-white/10 ${p.borderHover} transition-all duration-300 shadow-md`}
+                className={`p-5 sm:p-6 rounded-2xl bg-white/[0.04] border border-white/10 ${p.borderHover} transition-all duration-300 shadow-md`}
               >
-                <span className={`font-mono text-2xl font-black ${p.color} block mb-3`}>
+                <span className={`font-mono text-xl sm:text-2xl font-black ${p.color} block mb-2 sm:mb-3`}>
                   {p.step}
                 </span>
-                <h3 className="text-base font-bold text-white mb-2 font-['Space_Grotesk']">
+                <h3 className="text-sm sm:text-base font-bold text-white mb-1.5 sm:mb-2 font-['Space_Grotesk']">
                   {p.title}
                 </h3>
-                <p className="text-xs text-slate-400 leading-relaxed">
+                <p className="text-xs text-slate-300 leading-relaxed">
                   {p.desc}
                 </p>
               </motion.div>
@@ -688,13 +690,13 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
       {/* ========================================================= */}
       <AnimatePresence>
         {activeModalService && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md overflow-y-auto">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/75 backdrop-blur-md overflow-y-auto">
             <motion.div
               initial={{ opacity: 0, scale: 0.94, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.94, y: 20 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="relative w-full max-w-3xl bg-[#0b0e15] border border-white/20 rounded-3xl p-6 sm:p-10 shadow-2xl my-auto max-h-[90vh] overflow-y-auto"
+              className="relative w-full max-w-3xl bg-white border border-slate-200 rounded-3xl p-5 sm:p-10 shadow-2xl my-auto max-h-[90vh] overflow-y-auto"
               role="dialog"
               aria-modal="true"
             >
@@ -708,42 +710,42 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
               <button
                 type="button"
                 onClick={() => setActiveModalService(null)}
-                className="absolute top-5 right-5 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white/70 hover:text-white transition-all cursor-pointer z-10"
+                className="absolute top-4 right-4 sm:top-5 sm:right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600 hover:text-slate-900 transition-all cursor-pointer z-10"
                 aria-label="Close modal"
               >
                 <X className="w-4 h-4" />
               </button>
 
               <div className="flex items-center gap-3 mb-2">
-                <span className="font-mono text-xs uppercase tracking-widest px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-300">
+                <span className="font-mono text-xs uppercase tracking-widest px-2.5 py-1 rounded bg-slate-100 border border-slate-200 text-slate-600 font-semibold">
                   DISCIPLINE {activeModalService.number}
                 </span>
-                <span className="font-mono text-xs uppercase tracking-widest text-slate-400">
+                <span className="font-mono text-xs uppercase tracking-widest text-slate-500">
                   {activeModalService.category}
                 </span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-bold font-['Space_Grotesk'] text-white mb-2">
+              <h2 className="text-xl sm:text-3xl font-bold font-['Space_Grotesk'] text-slate-950 mb-2">
                 {activeModalService.title}
               </h2>
-              <p className="text-sm sm:text-base text-slate-300 mb-6 font-medium">
+              <p className="text-xs sm:text-base text-slate-600 mb-5 sm:mb-6 font-medium">
                 {activeModalService.tagline}
               </p>
 
               {/* Architecture Blueprint Note */}
-              <div className="p-4 rounded-xl bg-slate-900/90 border border-white/10 text-xs font-mono text-cyan-300 mb-6">
+              <div className="p-3.5 sm:p-4 rounded-xl bg-slate-900 text-xs font-mono text-cyan-300 mb-5 sm:mb-6">
                 <span className="text-slate-400 block mb-1">SYSTEM ARCHITECTURE BLUEPRINT:</span>
                 {activeModalService.architectureSummary}
               </div>
 
               {/* Deliverables */}
-              <div className="mb-6">
-                <span className="block font-mono text-xs uppercase tracking-wider text-slate-400 font-bold mb-2">
+              <div className="mb-5 sm:mb-6">
+                <span className="block font-mono text-xs uppercase tracking-wider text-slate-700 font-bold mb-2">
                   FULL DELIVERABLES &amp; COMPLIANCE SPECIFICATIONS
                 </span>
                 <ul className="space-y-2">
                   {activeModalService.deliverables.map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-200">
+                    <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
                       <CheckCircle2
                         className="w-4 h-4 shrink-0 mt-0.5"
                         style={{ color: activeModalService.accentColor }}
@@ -755,26 +757,26 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
               </div>
 
               {/* Case Study Details */}
-              <div className="p-5 rounded-2xl bg-white/[0.03] border border-white/10 mb-6 space-y-2">
-                <span className="font-mono text-xs uppercase tracking-wider text-amber-400 font-bold block">
+              <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 mb-5 sm:mb-6 space-y-2">
+                <span className="font-mono text-xs uppercase tracking-wider text-[#E65100] font-bold block">
                   CASE STUDY: {activeModalService.caseStudy.clientType.toUpperCase()}
                 </span>
-                <p className="text-xs sm:text-sm text-slate-300">
-                  <strong className="text-white">Challenge: </strong>
+                <p className="text-xs sm:text-sm text-slate-700">
+                  <strong className="text-slate-900">Challenge: </strong>
                   {activeModalService.caseStudy.challenge}
                 </p>
-                <p className="text-xs sm:text-sm text-slate-200">
-                  <strong className="text-emerald-400">Outcome: </strong>
+                <p className="text-xs sm:text-sm text-slate-700">
+                  <strong className="text-emerald-700">Outcome: </strong>
                   {activeModalService.caseStudy.outcome}
                 </p>
               </div>
 
               {/* Modal CTA */}
-              <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div className="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
                 <button
                   type="button"
                   onClick={() => setActiveModalService(null)}
-                  className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-xs font-mono text-slate-400 hover:text-white"
+                  className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-xs font-mono text-slate-500 hover:text-slate-900 cursor-pointer"
                 >
                   Close
                 </button>
@@ -782,7 +784,7 @@ export default function ServicesPage({ onNavigateHome }: { onNavigateHome?: () =
                 <a
                   href="#contact"
                   onClick={() => setActiveModalService(null)}
-                  className="w-full sm:w-auto px-6 py-2.5 rounded-xl font-mono text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-[#FA6400] to-[#E60038] text-white hover:brightness-110 transition-all text-center"
+                  className="w-full sm:w-auto px-6 py-2.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-[#FA6400] to-[#E60038] text-white hover:brightness-110 transition-all text-center shadow-md cursor-pointer"
                 >
                   Schedule Technical Briefing
                 </a>

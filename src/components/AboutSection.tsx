@@ -11,7 +11,6 @@ import {
   X,
   ShieldCheck,
   Globe2,
-  Cpu,
   Layers,
   Sparkles,
   Building2,
@@ -52,39 +51,39 @@ export default function AboutSection({ onViewFullPage }: { onViewFullPage?: () =
   return (
     <section
       id="about"
-      className="relative w-full bg-white text-slate-900 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden font-sans border-t border-slate-200"
-      aria-label="About Us - VR PI Group of Companies"
+      className="relative w-full bg-white text-slate-900 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden font-sans border-t border-slate-200"
+      aria-label="About Us - VR PI Tech Solutions"
     >
       {/* Subtle warm ambient background highlights */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-[#FA6400]/[0.035] rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-[#E60038]/[0.025] rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Section Header with Signature Orange Vertical Bar */}
+        {/* Section Header with Signature Orange Vertical Bar matching Desktop */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-14"
+          transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-row items-end justify-between gap-3 mb-6 sm:mb-8"
         >
-          <div className="flex items-center gap-3 sm:gap-4">
+          <div className="flex items-center gap-2.5 sm:gap-4">
             {/* Signature Orange Bar from Reference Design */}
-            <div className="w-1.5 sm:w-2 h-10 sm:h-12 rounded-full bg-gradient-to-b from-[#FA6400] to-[#E60038] shadow-[0_0_12px_rgba(250,100,0,0.3)] shrink-0" />
+            <div className="w-1.5 sm:w-2 h-8 sm:h-11 rounded-full bg-gradient-to-b from-[#FA6400] to-[#E60038] shadow-[0_0_12px_rgba(250,100,0,0.3)] shrink-0" />
             <div>
-              <span className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#E65100] block mb-0.5">
+              <span className="font-mono text-[10px] sm:text-xs font-bold uppercase tracking-[0.16em] sm:tracking-[0.2em] text-[#E65100] block mb-0.5">
                 WHO WE ARE &amp; WHAT WE STAND FOR
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 font-['Space_Grotesk'] tracking-tight">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-950 font-['Space_Grotesk'] tracking-tight">
                 About Us
               </h2>
             </div>
           </div>
 
-          <div className="flex items-center gap-2 self-start sm:self-end">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-mono text-slate-600">
-              <span className="w-2 h-2 rounded-full bg-[#FA6400]" />
-              <span>VR PI GROUP OF COMPANIES</span>
+          <div className="flex items-center shrink-0">
+            <span className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-[10px] sm:text-xs font-mono text-slate-600">
+              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#FA6400]" />
+              <span className="tracking-wide">VR PI TECH SOLUTIONS</span>
             </span>
           </div>
         </motion.div>
@@ -95,7 +94,7 @@ export default function AboutSection({ onViewFullPage }: { onViewFullPage?: () =
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.15, margin: "-40px" }}
-          className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center"
+          className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center"
         >
           {/* ========================================================= */}
           {/* LEFT COLUMN: EXECUTIVE LEADERSHIP VISUAL                   */}
@@ -108,7 +107,7 @@ export default function AboutSection({ onViewFullPage }: { onViewFullPage?: () =
             <div className="relative rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-xl">
               <img
                 src="/images/about-team.jpg"
-                alt="VR PI Group Executive Leadership Team"
+                alt="VR PI Tech Solutions Executive Leadership Team"
                 className="w-full aspect-[4/3] sm:aspect-[1.15/1] object-cover object-top transition-transform duration-700 group-hover:scale-102"
                 loading="lazy"
               />
@@ -117,18 +116,18 @@ export default function AboutSection({ onViewFullPage }: { onViewFullPage?: () =
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none" />
 
               {/* Floating Leadership Glass Badge */}
-              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-slate-950/85 backdrop-blur-xl border border-white/20 text-white flex items-center justify-between shadow-xl">
+              <div className="absolute bottom-3 sm:bottom-4 left-3 right-3 sm:left-4 sm:right-4 p-3 sm:p-4 rounded-2xl bg-slate-950/85 backdrop-blur-xl border border-white/20 text-white flex items-center justify-between shadow-xl">
                 <div>
-                  <div className="text-xs sm:text-sm font-bold font-['Space_Grotesk'] tracking-tight text-white flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#FA6400] animate-pulse" />
+                  <div className="text-xs sm:text-sm font-bold font-['Space_Grotesk'] tracking-tight text-white flex items-center gap-1.5 sm:gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#FA6400] animate-pulse shrink-0" />
                     <span>VRPI Executive Leadership</span>
                   </div>
-                  <div className="text-[11px] font-mono text-slate-300 mt-0.5">
+                  <div className="text-[10px] sm:text-[11px] font-mono text-slate-300 mt-0.5">
                     Integrity • Excellence • Innovation
                   </div>
                 </div>
-                <div className="text-right">
-                  <span className="text-[10px] font-mono font-bold tracking-wider uppercase text-emerald-400 bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 rounded-full">
+                <div className="text-right shrink-0">
+                  <span className="text-[9px] sm:text-[10px] font-mono font-bold tracking-wider uppercase text-emerald-400 bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 rounded-full">
                     ISO 27001
                   </span>
                 </div>
@@ -141,22 +140,22 @@ export default function AboutSection({ onViewFullPage }: { onViewFullPage?: () =
           {/* ========================================================= */}
           <motion.div variants={itemVariants} className="lg:col-span-7 flex flex-col justify-center">
             {/* Mission Statement Quote from User Reference Design */}
-            <div className="relative pl-0 sm:pl-2 mb-6">
-              <p className="text-base sm:text-lg lg:text-[19px] leading-relaxed text-slate-700 font-normal">
+            <div className="relative pl-0 sm:pl-2 mb-3.5 sm:mb-4">
+              <p className="text-sm sm:text-base lg:text-[17px] leading-relaxed text-slate-700 font-normal">
                 &ldquo;
                 <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#E65100] via-[#FA6400] to-[#E60038]">
-                  VR PI Group of Companies
+                  VR PI Tech Solutions
                 </span>
                 &rdquo; thrives as a dynamic and forward-thinking enterprise, specializing in cutting-edge industry solutions. Our core emphasis on pioneering software technology ensures the delivery of top-tier services, all while nurturing a culture of creativity, inclusivity, and unwavering excellence. By upholding integrity, fostering innovation, and promoting collaboration, we aspire to propel growth, generate value, and effect positive change within our industry and wider community.
               </p>
             </div>
 
-            {/* Strategic Pillars Tabs */}
-            <div className="flex gap-2 mb-4 border-b border-slate-200 pb-2">
+            {/* Strategic Pillars Tabs - cleanly scrollable horizontally without wrapping */}
+            <div className="flex items-center gap-2 mb-3 border-b border-slate-200 pb-2 overflow-x-auto no-scrollbar scroll-smooth">
               <button
                 type="button"
                 onClick={() => setActiveTab("pillars")}
-                className={`px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                   activeTab === "pillars"
                     ? "bg-slate-900 text-white shadow-sm"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
@@ -167,7 +166,7 @@ export default function AboutSection({ onViewFullPage }: { onViewFullPage?: () =
               <button
                 type="button"
                 onClick={() => setActiveTab("security")}
-                className={`px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                   activeTab === "security"
                     ? "bg-slate-900 text-white shadow-sm"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
@@ -178,7 +177,7 @@ export default function AboutSection({ onViewFullPage }: { onViewFullPage?: () =
               <button
                 type="button"
                 onClick={() => setActiveTab("governance")}
-                className={`px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                   activeTab === "governance"
                     ? "bg-slate-900 text-white shadow-sm"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
@@ -188,103 +187,121 @@ export default function AboutSection({ onViewFullPage }: { onViewFullPage?: () =
               </button>
             </div>
 
-            {/* Tab 1: Core Pillars */}
+            {/* Tab 1: Core Pillars - 3 Cards matching desktop arrangement on mobile */}
             {activeTab === "pillars" && (
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-7">
-                <div className="p-4 rounded-2xl bg-slate-50 hover:bg-slate-100/90 border border-slate-200/90 transition-all shadow-sm group/p">
-                  <div className="w-8 h-8 rounded-xl bg-[#FA6400]/10 border border-[#FA6400]/25 flex items-center justify-center text-[#E65100] mb-2.5 group-hover/p:scale-105 transition-transform">
-                    <Award className="w-4 h-4" />
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-4 sm:mb-5">
+                <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-50 hover:bg-slate-100/90 border border-slate-200/90 transition-all shadow-sm group/p flex flex-col justify-between">
+                  <div>
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-[#FA6400]/10 border border-[#FA6400]/25 flex items-center justify-center text-[#E65100] mb-2 sm:mb-2.5 group-hover/p:scale-105 transition-transform">
+                      <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                    </div>
+                    <h3 className="font-bold text-xs sm:text-sm text-slate-900 font-['Space_Grotesk'] mb-1 leading-tight">
+                      Unwavering Excellence
+                    </h3>
                   </div>
-                  <h3 className="font-bold text-sm text-slate-900 font-['Space_Grotesk'] mb-1">
-                    Unwavering Excellence
-                  </h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Enterprise-grade standards, fault-tolerant architectures, and high-velocity execution.
+                  <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed">
+                    Enterprise-grade standards and high-velocity execution.
                   </p>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-slate-50 hover:bg-slate-100/90 border border-slate-200/90 transition-all shadow-sm group/p">
-                  <div className="w-8 h-8 rounded-xl bg-[#E60038]/10 border border-[#E60038]/25 flex items-center justify-center text-[#E60038] mb-2.5 group-hover/p:scale-105 transition-transform">
-                    <Target className="w-4 h-4" />
+                <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-50 hover:bg-slate-100/90 border border-slate-200/90 transition-all shadow-sm group/p flex flex-col justify-between">
+                  <div>
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-[#E60038]/10 border border-[#E60038]/25 flex items-center justify-center text-[#E60038] mb-2 sm:mb-2.5 group-hover/p:scale-105 transition-transform">
+                      <Target className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                    </div>
+                    <h3 className="font-bold text-xs sm:text-sm text-slate-900 font-['Space_Grotesk'] mb-1 leading-tight">
+                      Pioneering Tech
+                    </h3>
                   </div>
-                  <h3 className="font-bold text-sm text-slate-900 font-['Space_Grotesk'] mb-1">
-                    Pioneering Tech
-                  </h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Autonomous AI pipelines, robotics integration, and hyper-scale cloud platforms.
+                  <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed">
+                    Autonomous AI, robotics and hyper-scale cloud platforms.
                   </p>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-slate-50 hover:bg-slate-100/90 border border-slate-200/90 transition-all shadow-sm group/p">
-                  <div className="w-8 h-8 rounded-xl bg-cyan-500/10 border border-cyan-500/25 flex items-center justify-center text-cyan-600 mb-2.5 group-hover/p:scale-105 transition-transform">
-                    <Users className="w-4 h-4" />
+                <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-50 hover:bg-slate-100/90 border border-slate-200/90 transition-all shadow-sm group/p flex flex-col justify-between">
+                  <div>
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-cyan-500/10 border border-cyan-500/25 flex items-center justify-center text-cyan-600 mb-2 sm:mb-2.5 group-hover/p:scale-105 transition-transform">
+                      <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                    </div>
+                    <h3 className="font-bold text-xs sm:text-sm text-slate-900 font-['Space_Grotesk'] mb-1 leading-tight">
+                      Collaborative Value
+                    </h3>
                   </div>
-                  <h3 className="font-bold text-sm text-slate-900 font-['Space_Grotesk'] mb-1">
-                    Collaborative Value
-                  </h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Forging mission-critical partnerships that propel sustained digital growth.
+                  <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed">
+                    Mission-critical partnerships that propel sustained growth.
                   </p>
                 </div>
               </div>
             )}
 
-            {/* Tab 2: Security & Compliance */}
+            {/* Tab 2: Security & Compliance - 3 Cards matching screenshot on mobile */}
             {activeTab === "security" && (
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-7">
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm">
-                  <ShieldCheck className="w-5 h-5 text-emerald-600 mb-2" />
-                  <h4 className="font-bold text-sm text-slate-900 mb-1">ISO 27001 Certified</h4>
-                  <p className="text-xs text-slate-600">
-                    Comprehensive information security management system covering all cloud nodes.
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-4 sm:mb-5">
+                <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600 mb-1.5 sm:mb-2" />
+                    <h4 className="font-bold text-xs sm:text-sm text-slate-900 mb-1 leading-tight">ISO 27001 Certified</h4>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed">
+                    Comprehensive info security covering all cloud nodes.
                   </p>
                 </div>
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 mb-2" />
-                  <h4 className="font-bold text-sm text-slate-900 mb-1">SOC 2 Type II</h4>
-                  <p className="text-xs text-slate-600">
-                    Third-party verified compliance for data confidentiality and processing integrity.
+                <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mb-1.5 sm:mb-2" />
+                    <h4 className="font-bold text-xs sm:text-sm text-slate-900 mb-1 leading-tight">SOC 2 Type II</h4>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed">
+                    Third-party verified compliance for data confidentiality.
                   </p>
                 </div>
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm">
-                  <Globe2 className="w-5 h-5 text-purple-600 mb-2" />
-                  <h4 className="font-bold text-sm text-slate-900 mb-1">GDPR &amp; DPDP Compliant</h4>
-                  <p className="text-xs text-slate-600">
-                    Strict privacy preservation, local data enclaves, and cryptographic auditing.
+                <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <Globe2 className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 mb-1.5 sm:mb-2" />
+                    <h4 className="font-bold text-xs sm:text-sm text-slate-900 mb-1 leading-tight">GDPR &amp; DPDP</h4>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed">
+                    Strict privacy preservation and local data enclaves.
                   </p>
                 </div>
               </div>
             )}
 
-            {/* Tab 3: Corporate Governance */}
+            {/* Tab 3: Corporate Governance - 3 Cards matching desktop on mobile */}
             {activeTab === "governance" && (
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-7">
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm">
-                  <Building2 className="w-5 h-5 text-amber-600 mb-2" />
-                  <h4 className="font-bold text-sm text-slate-900 mb-1">Board Oversight</h4>
-                  <p className="text-xs text-slate-600">
-                    Independent governance committee ensuring fiduciary rigor and transparent ethics.
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-4 sm:mb-5">
+                <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <Building2 className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 mb-1.5 sm:mb-2" />
+                    <h4 className="font-bold text-xs sm:text-sm text-slate-900 mb-1 leading-tight">Board Oversight</h4>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed">
+                    Independent governance ensuring fiduciary rigor.
                   </p>
                 </div>
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm">
-                  <Sparkles className="w-5 h-5 text-rose-600 mb-2" />
-                  <h4 className="font-bold text-sm text-slate-900 mb-1">ESG Commitment</h4>
-                  <p className="text-xs text-slate-600">
-                    100% carbon-neutral cloud compute routing and active STEM education grants.
+                <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-rose-600 mb-1.5 sm:mb-2" />
+                    <h4 className="font-bold text-xs sm:text-sm text-slate-900 mb-1 leading-tight">ESG Commitment</h4>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed">
+                    100% carbon-neutral cloud compute routing.
                   </p>
                 </div>
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm">
-                  <Layers className="w-5 h-5 text-indigo-600 mb-2" />
-                  <h4 className="font-bold text-sm text-slate-900 mb-1">Open Source R&amp;D</h4>
-                  <p className="text-xs text-slate-600">
-                    Contributing foundational tools to Linux Foundation and Apache software projects.
+                <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <Layers className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-600 mb-1.5 sm:mb-2" />
+                    <h4 className="font-bold text-xs sm:text-sm text-slate-900 mb-1 leading-tight">Open Source R&amp;D</h4>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed">
+                    Contributing foundational tools to Linux &amp; Apache.
                   </p>
                 </div>
               </div>
             )}
 
-            {/* Action Row: Orange "Explore Us" Button & Enterprise Quick Stats */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-6 pt-2">
+            {/* Action Row: Orange "Explore Us" Button & Enterprise Quick Stats side by side */}
+            <div className="flex flex-row items-center gap-4 sm:gap-6 pt-2">
               {/* Signature Orange Explore Us Button */}
               <motion.button
                 type="button"
@@ -297,25 +314,25 @@ export default function AboutSection({ onViewFullPage }: { onViewFullPage?: () =
                     setIsCharterOpen(true);
                   }
                 }}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full font-bold text-sm text-white bg-gradient-to-r from-[#FA6400] to-[#E60038] hover:from-[#FF7A00] hover:to-[#FF1A4B] shadow-[0_8px_25px_rgba(250,100,0,0.35)] hover:shadow-[0_10px_35px_rgba(250,100,0,0.55)] transition-all duration-300 cursor-pointer group"
+                className="shrink-0 inline-flex items-center justify-center gap-2 px-5 sm:px-8 py-3 sm:py-3.5 rounded-full font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-[#FA6400] to-[#E60038] hover:from-[#FF7A00] hover:to-[#FF1A4B] shadow-[0_8px_25px_rgba(250,100,0,0.35)] hover:shadow-[0_10px_35px_rgba(250,100,0,0.55)] transition-all duration-300 cursor-pointer group"
               >
                 <span>Explore Us</span>
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </motion.button>
 
-              {/* Quick Credentials */}
-              <div className="flex items-center gap-6 text-xs font-mono text-slate-600 border-l sm:border-slate-200 sm:pl-6">
+              {/* Quick Credentials - Horizontal layout with vertical divider */}
+              <div className="flex items-center gap-3 sm:gap-6 text-xs font-mono text-slate-600 border-l border-slate-200 pl-3.5 sm:pl-6">
                 <div>
-                  <span className="font-bold text-slate-900 font-sans text-sm block">Est. 2021</span>
-                  <span className="text-[11px] text-slate-500">Incorporated</span>
+                  <span className="font-bold text-slate-900 font-sans text-xs sm:text-sm block leading-tight">Est. 2021</span>
+                  <span className="text-[10px] sm:text-[11px] text-slate-500 block">Incorporated</span>
                 </div>
                 <div>
-                  <span className="font-bold text-slate-900 font-sans text-sm block">50+</span>
-                  <span className="text-[11px] text-slate-500">Enterprises Scaled</span>
+                  <span className="font-bold text-slate-900 font-sans text-xs sm:text-sm block leading-tight">50+</span>
+                  <span className="text-[10px] sm:text-[11px] text-slate-500 block whitespace-nowrap">Enterprises Scaled</span>
                 </div>
                 <div>
-                  <span className="font-bold text-[#E65100] font-sans text-sm block">100%</span>
-                  <span className="text-[11px] text-slate-500">Node SLA</span>
+                  <span className="font-bold text-[#E65100] font-sans text-xs sm:text-sm block leading-tight">100%</span>
+                  <span className="text-[10px] sm:text-[11px] text-slate-500 block whitespace-nowrap">Node SLA</span>
                 </div>
               </div>
             </div>
@@ -365,7 +382,7 @@ export default function AboutSection({ onViewFullPage }: { onViewFullPage?: () =
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-black font-['Space_Grotesk'] text-white mb-4">
-                VR PI Group of Companies
+                VR PI Tech Solutions
               </h3>
 
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">

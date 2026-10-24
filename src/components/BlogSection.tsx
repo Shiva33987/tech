@@ -58,7 +58,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "Dr. Aris Thorne",
       role: "Chief AI Scientist, VRPI Systems",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80",
+      avatar: "/images/avatar-1.jpg",
     },
     metricsHighlight: "< 4.2ms Edge Latency • 99.4% Kinematic Accuracy",
     tags: ["Autonomous Systems", "ROS2", "Neuromorphic AI", "TensorRT"],
@@ -88,7 +88,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "Elena Rostova",
       role: "VP Cloud Engineering",
-      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=256&q=80",
+      avatar: "/images/avatar-2.jpg",
     },
     metricsHighlight: "99.999% Uptime • < 12s Region Failover",
     tags: ["Kubernetes", "eBPF", "GitOps", "Service Mesh"],
@@ -118,11 +118,11 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "Marcus Vance",
       role: "Principal Cryptographic Architect",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&q=80",
+      avatar: "/images/avatar-3.jpg",
     },
     metricsHighlight: "Post-Quantum Dilithium • Zero-Knowledge Proofs",
     tags: ["Post-Quantum", "HSM Enclaves", "SOC2 Type II", "mTLS"],
-    image: "/images/it-showcase/cybersecurity.jpg",
+    image: "/images/it-showcase/cyber-defense.jpg",
     content: {
       lead:
         "Adversaries are actively stockpiling encrypted financial and corporate telemetry in anticipation of cryptanalytically relevant quantum computers. Implementing quantum-resistant key encapsulation today is vital.",
@@ -148,11 +148,11 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "Siddharth Verma",
       role: "Lead Systems Architect",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=256&q=80",
+      avatar: "/images/avatar-4.jpg",
     },
     metricsHighlight: "1.2M Events/Sec • 0.35ms P99 Latency",
     tags: ["Rust", "Zero-Copy", "High-Throughput", "Kafka Mesh"],
-    image: "/images/it-showcase/data-topology.jpg",
+    image: "/images/it-showcase/data-intelligence.jpg",
     content: {
       lead:
         "When processing clearing house order books, standard JVM garbage collection pauses are disqualifying. By migrating transaction ingestion to bare-metal Rust with DPDK kernel bypass, we reduced P99 latency variance from 12ms to 350 microseconds.",
